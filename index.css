@@ -1,0 +1,481 @@
+@font-face {
+    font-family: 'Lato';
+    src: url("fonts/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: 'LatoLight';
+    src: url("fonts/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: 'LatoRegular';
+    src: url("fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'LatoThin';
+    src: url("fonts/Lato-Thin.ttf");
+}
+
+
+body {
+    font-family: 'LatoRegular';
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 30%;
+}
+
+
+.Logueo {
+    width: 10%;
+    height: 40px;
+    color: white;
+    background-color: #0c4ea2;
+    border: 0;
+    outline: 0;
+    border-radius: 15px;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    box-shadow: 5px 5px 10px black;
+}
+
+.list-navegacion {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+header {
+    width: 100%;
+    background: rgb(192, 228, 228);
+    background: linear-gradient(0deg, rgba(192, 228, 228, 1) 15%, rgba(11, 241, 241, 1) 100%);
+    padding-bottom: 60px;
+    padding-top: 20px;
+
+
+}
+
+.container-header {
+    width: 100%;
+    margin-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.container-header img {
+    width: 40%;
+}
+
+.container {
+    width: 60%;
+}
+
+.container img {
+    width: 60%;
+}
+
+.container p {
+    font-size: 1.75em;
+    width: 70%;
+    font-family: 'LatoLight';
+}
+
+.container button {
+    width: 20%;
+    height: 45px;
+    color: black;
+    background-color: #0c4ea2;
+    border: 0;
+    outline: 0;
+    border-radius: 15px;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    box-shadow: 5px 5px 10px black;
+}
+
+.container button:hover {
+    background-color: #0c4ea2;
+    cursor: pointer;
+    color: white;
+}
+
+.flexbox-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.seccion1-info {
+    background-color: #f67905;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion1-info h2 {
+    margin: 0px;
+    padding: 0;
+    color: #f7de82;
+    font-family: 'LatoThin';
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.seccion1-info p {
+    margin: 20px 0px 0px 0px;
+    padding: 0;
+    color: white;
+    font-family: 'LatoThin';
+    font-size: 1.9em;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    color: #0c4ea2;
+    width: 10%;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 0px 17px 2px;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 10px;
+    border-radius: 20px;
+    transition: transform 150ms ease-in;
+    min-width: 250px;
+}
+
+.card img {
+    width: 50%;
+    transition: transform 150ms ease-in;
+}
+
+.card h3 {
+    font-family: 'Lato';
+    font-size: 1.5em;
+}
+
+.card p {
+    font-family: 'LatoLight';
+    font-size: 1.5em;
+}
+
+.card button {
+    width: 70%;
+    height: 50px;
+    color: black;
+    background-color: #f7de82;
+    border: 0;
+    outline: 0;
+    border-radius: 15px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    min-width: 100px;
+}
+
+.card button:hover {
+    background-color: #0c4ea2;
+    cursor: pointer;
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover img {
+    transform: scale(1.2);
+}
+
+.Seccion-clientes {
+    background: rgb(192, 228, 228);
+    background: linear-gradient(0deg, rgba(192, 228, 228, 1) 15%, rgba(11, 241, 241, 1) 100%);
+}
+.Seccion-clientes h2 {
+    text-align: center;
+    margin: 0px;
+    padding: 0;
+    font-family: 'Lato';
+    font-size: 2em;
+    text-transform: uppercase
+}
+.container-img {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+}
+.container-img .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-img .box-img:nth-child(1) {
+    grid-column-start: span 2;
+}
+.container-img .box-img:nth-child(4) {
+    grid-row-start: span 2;
+}
+
+.container-img .box-img {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+
+@media screen and (max-with:800px) {
+    .container-img {
+        width: 95%;
+        grid-template-columns: repeat(2 1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+    }
+    .container-img .box-img:nth-child(1) {
+        grid-column-start: span 1;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container-img {
+        width: 90%;
+        grid-template-columns: repeat(1 1fr);
+    }
+    .container-img .box-img {
+        height: 200px;
+    }
+}
+
+
+.seccion2-proveedores {
+    background-color: #f67905;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion2-proveedores h2 {
+    margin: 0px;
+    padding: 0;
+    color: #f7de82;
+    font-family: 'LatoThin';
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.seccion2-proveedores p {
+    margin: 20px 0px 0px 0px;
+    padding: 0;
+    color: white;
+    font-family: 'LatoThin';
+    font-size: 1.9em;
+}
+
+
+
+.list-navegacion2 {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.registrate {
+    font-family: 'Lato';
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(8, 23, 237);
+}
+
+.contenedor {
+width: 50%;
+padding: 15px;
+transform: translate(+50%, -10%);
+}
+
+.formulario {
+    margin-top: 10px;
+    padding: 3px;  
+}
+
+.registrate h1 {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+input [type="text"],
+input [type="passsword"] {
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.button {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: cadetblue;
+}
+
+.formulario p {
+    text-align: center;
+    font-family: 'LatoRegular';
+}
+
+.link {
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+.link:hover {
+    color: cadetblue;
+}
+
+
+footer {
+    font-family: 'LatoRegular';
+    margin: 0;
+    padding: 0;
+}
+.pie-pagina {
+    width: 100%;
+    background: rgb(192, 228, 228);
+    background: linear-gradient(0deg, rgba(192, 228, 228, 1) 15%, rgba(11, 241, 241, 1) 100%)
+}
+
+.pie-pagina .grupo-1 {
+width: 100%;
+max-width: 1200px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 50px;
+padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .redsocial a {
+display: inline-block;
+text-decoration: none;
+width: 45px;
+height: 45px;
+line-height: 45px;
+color: #fff;
+margin-right: 10px;
+background-color: #0d2033;
+text-align: center;
+transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .redsocial a:hover {
+    transform: scale(1.2);
+    color: aqua;
+}
+
+@media (max-width:800px) {
+
+    .seccion-info h2 {
+        font-size: 2.4em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .seccion-info h4 {
+        font-size: 1.2em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container-info {
+        flex-direction: column;
+    }
+
+    .container-img-info {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+
+    .container-img-info img {
+        width: 20%;
+    }
+
+    .container-img-info p {
+        font-size: 1.2em;
+        width: 40%;
+    }
+}
